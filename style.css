@@ -1,0 +1,264 @@
+body{
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+.bungkus{
+	width: 1000px;
+	background-color: black;
+	margin: 0 auto;
+}
+
+.header{
+	display: flex;
+	background-color: lightblue;
+}
+
+#judul{
+	font-family: Alfa Slab One;
+	font-size: 37px;
+	text-align: center;
+	margin: auto;
+}
+
+.dropdown{
+	display: inline-block;
+}
+
+.nav{
+	background-color: white;
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	width: 1000px;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: lightblue;
+	color: black;
+	width: 1000px;
+	z-index: 1;
+	text-align: center;
+}
+
+.dropdown-content a{
+	color: black;
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.dropdown:hover .nav{background-color: grey}
+
+.dropdown:hover .dropdown-content{display: block;}
+
+.dropdown-content a:hover{background-color: lightgrey;}
+
+.isi_h{
+	display: grid;
+	grid-template-columns: 700px 300px;
+	grid-template-areas: "quote quote" 
+						"spawn_by spawn_by" 
+						"cerita sosmed";	
+}
+
+#quotes{
+	grid-area: quote;
+	color: white;
+	font-size: 40px;
+	line-height: 0.5;
+	margin: 20px auto 0px auto;
+	text-shadow: 4px 4px grey;
+}
+
+#quotes p {
+	text-indent: 250px;
+	margin-bottom: 0px; 
+}
+
+#quotes:hover+#spawn_by{
+	animation-duration: 5s;
+	color: black;
+	animation-name: muncul;
+	animation
+}
+
+@keyframes muncul{
+from {color:black;}
+to {color: white;}
+}
+
+#spawn_by{
+	text-indent: 550px;
+	font-size: 25px;
+	color: black;
+	margin-top: 15px;
+}
+
+#cerita{
+	grid-area: cerita;
+	color: white;
+	font-size: 30px;
+	margin: 10px;
+	text-indent: 30px;
+	text-align: justify;
+}
+
+.sosmed{
+	margin-top:10px;
+	padding: 15px;
+	grid-area: sosmed;
+	color: black;
+	background-color: lightgrey;
+	font-size: 20px;
+}
+
+.footer{
+	background-color: lightblue;	
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	margin-top:5px; 
+}
+
+.isi_c{
+	color: white;
+	margin: auto;
+	width: 800px;
+}
+
+#penjelasan{
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.form{
+	display: grid;
+	grid-template-columns: 180px 620px;
+}
+
+#nama,#email,#pesan{	
+	margin-top: 20px;
+	width: 600px;
+	height: 20px;
+}
+
+.kontek{
+	font-size: 15px;
+	line-height: 3;
+	margin-top: 9px;
+}
+
+button{
+	width: 100px;
+	margin-top: 20px;
+}
+#pesan{
+	height: 50px;
+}
+
+.isi_a{
+	color: white;
+	width: 900px;
+	margin:auto;
+	font-size: 20px;
+}
+
+#foto{
+	width: 250px;
+	margin-top: 20px;
+	padding-left:325px;
+
+}
+
+#awal{
+	font-size: 50px;
+	text-align: center;
+}
+
+#perkenalan,#sekolah,#hobi{
+	text-indent: 20px;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+.grid_a{
+	display: grid;
+	grid-template-columns: 700px 200px;
+}
+
+#btn_r{
+	width: 180px;
+	margin-left: 25px;
+}
+
+#btn_r:hover{
+	background-color: red;
+}
+
+#data_r{
+	display: none;
+	margin-left: 8px;
+	width: 200px;
+	color: black;
+	padding: 5px;
+	background-color: white;
+}
+
+.isi_p{
+	width: 900px;
+	color: white;
+	text-align: center;
+	margin: auto;
+}
+
+#awal_p{
+	font-size: 50px;
+	margin-top: 10px;
+}
+
+.pameran{
+	width: 800px;
+	margin: auto;
+padding-bottom: 10px;
+}
+
+.pameran:hover{
+	background-color: darkgrey;
+}
+
+.tema{
+	font-size: 30px;
+}
+
+.foto2{
+	display: grid;
+	grid-template-columns: auto auto auto;	
+	grid-template-rows: 166px;
+	width: 800px;
+	margin:auto;
+	margin-bottom: 10px;
+}
+
+.foto2 a{
+	margin: auto;
+}
+
+.uk_foto{
+	margin: auto;
+	width: 200px;
+}
+
+.uk_foto:hover{
+	width: 250px;
+	height: 166.65px;
+}
+
+.foto2 img {
+	width: 100%
+	height:auto;
+}

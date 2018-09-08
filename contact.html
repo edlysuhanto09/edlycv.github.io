@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+
+	<script type="text/javascript">
+		function pesan(){
+			var namaa = document.getElementById("nama").value;
+			var emaill = document.getElementById("email").value;
+			window.confirm("Terima Kasih "+namaa+" ("+emaill+") telah mengajukan pertanyaan");
+		}
+	</script>
+</head>
+<body>
+	<div class="bungkus">
+		<div class="header">
+			<img id="logo" src="umn.png"></img>
+			<div id="judul">Selamat Datang di CV Online<br>Universitas Multimedia Nusantara</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="nav">CONTACT ▼</div>
+			<div class="dropdown-content">
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT</a>
+				<a href="portfolio.html">PORTFOLIO</a>
+				<a href="contact.html">CONTACT</a>
+			</div>
+		</div>
+
+		<div class="isi_c">
+			<div id="penjelasan"> Pada box dibawah akan diminta data-data anda untuk dapat berkomunikasi dengan saya langsung</div>
+			<div class="form">
+				<div class="kontek">
+					Masukan Nama : <br>
+					
+					Masukan Email : <br>
+					
+					Masukan Pertanyaan Anda : <br>
+					
+				</div>
+
+				<div class="input">
+					<input type="text" id="nama" >
+					<input type="email" id="email">
+					<textarea type="text" id="pesan"></textarea>
+					<button onclick="pesan()">Submit</button>
+				</div>
+			</div>	
+		</div>
+
+		<div class="footer">© Copyright - Edly Suhanto (00000014828)</div>
+
+	</div>
+</body>
+</html>

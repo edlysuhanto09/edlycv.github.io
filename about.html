@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+
+	<script type="text/javascript">
+		function ubah() {
+			var x = document.getElementById("data_r");
+			if (x.style.display === "none") {
+				x.style.display = "inline-block";
+			}else{
+				x.style.display = "none";
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<div class="bungkus">
+		<div class="header">
+			<img id="logo" src="umn.png"></img>
+			<div id="judul">Selamat Datang di CV Online<br>Universitas Multimedia Nusantara</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="nav">ABOUT ▼</div>
+			<div class="dropdown-content">
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT</a>
+				<a href="portfolio.html">PORTFOLIO</a>
+				<a href="contact.html">CONTACT</a>
+			</div>
+		</div>
+
+		<div class="isi_a">
+			<div id="awal">Edly Suhanto</div>
+			<img id="foto" src="foto_about.jpg">
+			<div class="grid_a">	
+				<div class="kiri">
+					<div id="perkenalan">Perkenalkan nama saya Edly Suhanto, saya berusia 20 tahun, saya masih berstatus mahasiswa di Universitas Multimedia Nusantara (UMN). Saya mengambil jurusan Sistem Informasi di UMN karena saya menyukai dunia teknologi dan saya ingin belajar bagaimana berbisnis di dunia teknologi.</div>
+					<div id="sekolah">Saya berasal dari lulusan TK YADIKA 3, SD YADIKA 3, SMP YADIKA 3, dan SMA YADIKA 3. Semenjak sekolah saya sangat suka dengan pelajaran komputer, dan saya senang jika membantu teman saya yang kurang begitu mengerti tentang komputer.</div>
+					<div id="hobi">Selain menyukai dunia teknologi dibagian komputer, saya juga sangat menyukai dunia photography. Kita dapat menggambarkan sebuah ekspresi didalam suatu foto, itulah salah satu penyebab saya menyukai photography.</div>
+				</div>
+				<div class="kanan">
+					<button id="btn_r" onclick="ubah()">INI DATA RAHASIA SAYA</button>
+					<div id="data_r">
+						Jenis Kelamin: Pria <br>
+						Tinggi Badan : 180 CM <br>
+						Berat Badan  : 107 KG
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">© Copyright - Edly Suhanto (00000014828)</div>
+
+	</div>
+</body>
+</html>
